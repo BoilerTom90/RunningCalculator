@@ -1,0 +1,314 @@
+/* CSS Reset */
+body, header, nav, aside, main, footer , h3, p {
+	margin: 0;
+	padding: 0;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, Sans-Serif;
+	background: #F8F8F8;
+   background: white;
+}
+
+
+header {
+	margin: 0 auto;
+	color: white;
+	width: 100%;
+	height: 100px;
+	padding: 2px;
+	text-align: center;
+	font-weight: bold;
+	
+	/* Safari 4-5, Chrome 1-9 */
+	*background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#1a82f7), to(#2F2727));
+   background: -webkit-linear-gradient(top, #2F2727, #1a82f7); /* Safari 5.1, Chrome 10+ */
+  	background: -moz-linear-gradient(top, #2F2727, #1a82f7);    /* Firefox 3.6+ */
+   background: -ms-linear-gradient(top, #2F2727, #1a82f7);     /* IE 10 */
+	background: -o-linear-gradient(top, #2F2727, #1a82f7);      /* Opera 11.10+ */
+}
+
+
+html,body {
+	background-image: url(mybackground.jpg);
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: bottom;
+}
+
+
+header a {
+   color: white;
+}
+
+#content {
+	width: 90%;
+	margin: 0 auto;
+}
+
+#tab1 {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.raceParams {
+	width: 250px;
+  	margin: 15px;
+}
+
+.raceParams fieldset {
+   border: 1px solid gray;
+   font-weight: bold;
+   font-size: 16px;
+  	-moz-border-radius:5px;   
+   border-radius: 5px;  
+   -webkit-border-radius: 5px; 
+	margin-top: 20px;
+	background: lightgray;
+   text-align: center;
+}
+
+.raceParams legend {
+   font-weight: bold;
+   font-size: 18px;
+   width: 80%;
+   text-align: center;
+   margin: 0 auto;
+   padding: 10px;
+   border: 1px solid lightgray;
+   -moz-border-radius:5px;  
+   border-radius: 5px;  
+   -webkit-border-radius: 5px; 
+   background: black;
+   background: -webkit-linear-gradient(top, #2F2727, #1a82f7); /* Safari 5.1, Chrome 10+ */
+   background: -moz-linear-gradient(top, #2F2727, #1a82f7);    /* Firefox 3.6+ */
+   background: -ms-linear-gradient(top, #2F2727, #1a82f7);     /* IE 10 */
+   background: -o-linear-gradient(top, #2F2727, #1a82f7);      /* Opera 11.10+ */
+   color: white;
+}
+
+
+.raceParams ul {
+	font-size: 16px;
+	list-style-type:none;
+   list-style-position:outside;
+   margin:0px;
+   padding:0px;
+   text-align: left;
+   font-weight:bold;
+}
+
+
+.raceParams li{
+   margin: 4px 0 4px 0;
+   padding: 0px;
+}
+
+.raceParams li:nth-child(2), 
+.raceParams li:nth-child(4) {
+	margin-bottom: 16px;
+}
+
+.raceParams li:nth-child(6)
+{
+	margin-bottom: 8px;
+   padding-bottom: 4px;
+}
+
+.raceParams hr {
+   border: 0;
+   height: 1px;
+   background: gray;
+}
+
+/* don't like the colors of these boxes! */
+.raceParams input[type="text"], 
+.raceParams input[type="submit"],
+.raceParams select {
+	font-size: 16px;
+   box-sizing: border-box;
+   height: 25px; 
+	background-color: #D4E6F9;
+   border: 1px solid black;
+   -moz-border-radius:5px;  
+   border-radius: 5px;  
+   -webkit-border-radius: 5px; 
+    
+   -moz-box-shadow: 2px 2px 3px steelblue;
+   -webkit-box-shadow: 2px 2px 3px steelblue;
+   box-shadow: 2px 2px 3px steelblue;
+   padding: 3px 3px;
+}
+
+button {
+   font-size: 16px;
+   font-weight:bold;
+   width: 24px;
+   margin: 0 auto;
+   text-align: center;
+   border-radius: 5px;  
+   background: -webkit-linear-gradient(top, #2F2727, #1a82f7); /* Safari 5.1, Chrome 10+ */
+   background: -moz-linear-gradient(top, #2F2727, #1a82f7);    /* Firefox 3.6+ */
+   background: -ms-linear-gradient(top, #2F2727, #1a82f7);     /* IE 10 */
+   background: -o-linear-gradient(top, #2F2727, #1a82f7);      /* Opera 11.10+ */
+   background: black;
+   color: white;
+}
+
+button:hover {
+   background: yellow;
+   color: black;
+}
+
+.raceParams #calcButton {
+   font-size: 16px;
+   font-weight:bold;
+   width: 6em;
+   margin: 0 auto;
+	text-align: center;
+	background: -webkit-linear-gradient(top, #2F2727, #1a82f7); /* Safari 5.1, Chrome 10+ */
+   background: -moz-linear-gradient(top, #2F2727, #1a82f7);    /* Firefox 3.6+ */
+   background: -ms-linear-gradient(top, #2F2727, #1a82f7);     /* IE 10 */
+   background: -o-linear-gradient(top, #2F2727, #1a82f7);      /* Opera 11.10+ */
+   color: white;
+}
+
+
+.raceParams #calcButton:hover {
+	border-color: black;
+   color: black;
+   background: #ffff99;
+}
+
+.raceParams input:hover,
+.raceParams select:hover {
+	border-color: black;
+   font: black;
+}
+
+.raceParams #calcButton:active {
+	border-top-color: black;
+	color: white;
+	font-weight: bold;
+	background: darkgreen;
+}
+
+.raceParams input:hover,
+.raceParams select:hover, 
+.raceParams input:active,
+.raceParams select:active
+{
+	border-top-color: black;
+	background-color: #ffff99;
+}
+
+.raceParams input[type="text"] {
+    width: 35px;
+}
+
+.raceParams input[type="radio"] {
+   height: 16px;
+   padding-left: 0;
+   padding-right: 10px;
+   margin-left: 0;
+   vertical-align: center;
+   font-size: 16px;
+}
+
+.raceParams input[type="radio"] + label {
+   margin-right: 15px;
+}
+
+
+
+/* Formatting of the Tables that hold all the information */
+.myTable,
+table,
+#treadmillNote
+{
+	font-size: 16px;
+	margin: 0 auto; /* Center the table in the container */
+}
+
+#treadmillNote, #treadmill {
+   width: 700px;
+}
+
+table td {
+   vertical-align: top;
+}
+
+.myTable
+{
+   border-width: 0;
+   border-collapse: collapse;
+}
+
+.myTable th, .myTable td
+{ 
+	border-width: thin;
+	padding: 30px;
+	border-style: solid;
+	border-color: white;
+   	padding: .3em; 
+	text-align: center;
+}
+
+.myTable caption
+{ 
+	font-size: 18px; 
+	font-weight: bold;
+	margin: 1em auto; 
+	margin-bottom: 0px;
+	padding: 5x;
+   background-color: white;
+	color: navyblue;
+}
+
+.myTable th
+{
+   font-size: larger;
+	font-weight: bold;
+   background-color: black;
+   background: linear-gradient(#2F2727,#1A82f7);
+	color: #fff; 
+}
+
+.myTable td
+{
+   font-size: larger;
+}
+
+.myTable th:first-child
+{ 
+	border-radius: 5px 0 0 0; 
+}
+
+.myTable th:last-child
+{ 
+	border-radius: 0 5px 0 0; 
+}
+
+.myTable tr:last-child td:first-child
+{ 
+	border-radius: 0 0 0 9px; 
+}
+
+.myTable tr:last-child td:last-child
+{ 
+	border-radius: 0 0 9px 0; 
+}
+
+.myTable tr:nth-child(odd)
+{
+   background: #EDEDED; /* A grayish color */
+}
+
+.myTable tr:nth-child(even)
+{
+   background-color:#c5dffd; /* very light blue */
+}
+
+.myTable tr:hover
+{
+	*font-weight: bold;
+   background-color: lawngreen;
+   background-color: #ffff99;
+}

@@ -1,0 +1,48 @@
+#tabs {
+  overflow: auto;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+
+#tabs li {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#tabs a {
+    box-shadow: -4px 0 0 rgba(0, 0, 0, .2);
+    background: #ad1c1c;
+    background: linear-gradient(220deg, transparent 10px, #2f2727 10px);
+    text-shadow: 0 1px 0 rgba(0,0,0,.5);
+    color: #fff;
+    float: left;
+    font: bold 16px/35px 'Lucida sans', Arial, Helvetica;
+    height: 35px;
+    padding: 0 30px;
+    text-decoration: none;
+}
+
+#tabs a:hover {
+    background: #lightgray;
+    background: linear-gradient(220deg, transparent 10px, lightgray 10px);     
+	 color: black;
+}
+
+#tabs a:focus {
+    outline: 0;
+}
+
+#tabs #current a {
+    background: #1a82f7;
+    background: linear-gradient(220deg, transparent 10px, #1a82f7 10px);
+    text-shadow: none;    
+    color: white;
+}
+
+#content {
+    padding: 30px;
+}
